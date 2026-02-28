@@ -310,7 +310,7 @@ img {
 
 /* Custom Background Image Layer */
 .hero-bg-custom {
-    background: url('/assets/image/herooo-bgg.png'), var(--accent-gradient);
+    background: url('./assets/image/herooo-bgg.png'), var(--accent-gradient);
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
