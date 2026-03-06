@@ -73,7 +73,7 @@
 
         <section class="clients" id="clients">
             <div class="clients-container">
-                <p class="clients-subtitle">Trusted by</p>
+
                 <div class="clients-marquee">
                     <div class="marquee-content">
                         <!-- Placeholder logos (using text for now, can be replaced with actual img tags later) -->
@@ -81,15 +81,13 @@
                         <div class="client-logo">Palmtreeshopping</div>
                         <div class="client-logo">English Mithra</div>
                         <div class="client-logo">Triz App</div>
-                        <div class="client-logo">Brand A</div>
-                        <div class="client-logo">Studio B</div>
+
                         <!-- Duplicated for infinite scroll effect -->
                         <div class="client-logo">Poplr Cult</div>
                         <div class="client-logo">Palmtreeshopping</div>
                         <div class="client-logo">English Mithra</div>
                         <div class="client-logo">Triz App</div>
-                        <div class="client-logo">Brand A</div>
-                        <div class="client-logo">Studio B</div>
+
                     </div>
                 </div>
             </div>
@@ -214,6 +212,110 @@
 
                 </div>
             </div>
+        </section>
+
+
+        <!-- CLIENTS / BRANDS -->
+        <style>
+            /* ===== CLIENT LOGOS ===== */
+
+            .clients {
+                padding: 80px 8%;
+                background: #000000;
+            }
+
+            /* title */
+
+            .clients-title {
+                text-align: center;
+                margin-bottom: 50px;
+            }
+
+            .clients-title h2 {
+                font-size: 38px;
+                font-weight: 700;
+                color: #ffffff;
+            }
+
+            /* grid */
+
+            .logo-grid {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                gap: 40px 30px;
+                align-items: center;
+            }
+
+            /* logo box */
+
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+            }
+
+            /* image style */
+
+            .logo img {
+                max-width: 140px;
+                max-height: 70px;
+                object-fit: contain;
+
+
+
+                transition: 0.4s ease;
+            }
+
+            /* hover = color */
+
+            .logo img:hover {
+                filter: grayscale(0%) brightness(1);
+                opacity: 1;
+                transform: scale(1.08);
+            }
+
+            /* tablet */
+
+            @media(max-width:1000px) {
+                .logo-grid {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+
+            /* mobile */
+
+            @media(max-width:600px) {
+                .logo-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        </style>
+        <section class="clients">
+
+            <div class="clients-title">
+                <h2>Trusted by Brands</h2>
+            </div>
+
+            <div class="logo-grid">
+
+                <div class="logo"><img src="./assets/image/hilite.jpeg" alt=""></div>
+                <div class="logo"><img src="./assets/image/hug.jpeg" alt=""></div>
+                <div class="logo"><img src="./assets/image/nzo.jpeg" alt=""></div>
+                <div class="logo"><img src="./assets/image/tree.jpeg" alt=""></div>
+                <div class="logo"><img src="./assets/image/hola.jpeg" alt=""></div>
+                <div class="logo"><img src="./assets/image/zay.jpeg" alt=""></div>
+
+                <div class="logo"><img src="./assets/image/adn.jpeg" alt=""></div>
+                <div class="logo"><img src="./assets/image/tvs.jpeg" alt=""></div>
+                <div class="logo"><img src="./assets/image/ora.jpeg" alt=""></div>
+                <div class="logo"><img src="./assets/image/smoocho.jpg" alt=""></div>
+                <div class="logo"><img src="./assets/image/malabar.jpeg" alt=""></div>
+                <div class="logo"><img src="./assets/image/cult-2.jpg" alt=""></div>
+
+            </div>
+            </div>
+
         </section>
 
         <!-- Work & Features Sections mapped to Portfolio instead -->
